@@ -1,0 +1,296 @@
+/* =============================================
+   RESET BÁSICO
+============================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* =============================================
+     BODY
+  ============================================= */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #eef1f5;
+    color: #333333;
+    min-height: 100vh;
+  }
+  
+  /* =============================================
+     CABEÇALHO
+  ============================================= */
+  h1 {
+    background-color: #1a2f45;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #1a2f45;
+    margin: 40px 0 30px;
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+  
+  /* =============================================
+     FORMULÁRIO - Layout wide centralizado
+  ============================================= */
+  form {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto 60px auto;
+    background-color: #ffffff;
+    padding: 50px 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* =============================================
+     FIELDSET
+  ============================================= */
+  fieldset {
+    border: 2px solid #1a2f45;
+    border-radius: 8px;
+    padding: 30px 35px;
+    margin-bottom: 35px;
+  }
+  
+  legend {
+    background-color: #1a2f45;
+    color: #ffffff;
+    padding: 7px 18px;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  
+  /* =============================================
+     GRID DE CAMPOS - Duas colunas
+  ============================================= */
+  .campo-grupo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+    margin-bottom: 20px;
+  }
+  .campo-grupo-tres {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 40px;
+    margin-bottom: 20px;
+  }
+  
+  /* =============================================
+     CADA CAMPO INDIVIDUAL
+  ============================================= */
+  .campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  /* =============================================
+     NASCIMENTO E TELEFONE - linha inline
+  ============================================= */
+  .campo-inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .campo-inline label {
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+  
+  /* =============================================
+     LABELS
+  ============================================= */
+  label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #1a2f45;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  /* =============================================
+     INPUTS - Regra geral para todos os tipos
+  ============================================= */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="date"] {
+    padding: 10px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #fafafa;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Inputs que ocupam largura total */
+  .campo input[type="text"],
+  .campo input[type="email"],
+  .campo input[type="tel"],
+  .campo input[type="number"],
+  .campo input[type="date"] {
+    width: 100%;
+  }
+  
+  /* Inputs dentro da linha inline ficam com tamanho automático */
+  .campo-inline input[type="text"] {
+    width: auto;
+  }
+  
+  /* Efeito de foco em todos os inputs */
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  input[type="number"]:focus,
+  input[type="date"]:focus {
+    border-color: #1a2f45;
+    box-shadow: 0 0 0 3px rgba(26, 47, 69, 0.1);
+    outline: none;
+    background-color: #ffffff;
+  }
+  
+  /* =============================================
+     SELECT
+  ============================================= */
+  select {
+    padding: 10px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #fafafa;
+    cursor: pointer;
+    width: 100%;
+    transition: border-color 0.3s;
+  }
+  
+  select:focus {
+    border-color: #1a2f45;
+    outline: none;
+  }
+  
+  /* =============================================
+     TABELA DE MATRÍCULA
+  ============================================= */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  td {
+    padding: 15px 20px;
+    vertical-align: top;
+    border-right: 1px solid #e0e0e0;
+    width: 33.33%;
+  }
+  
+  td:last-child {
+    border-right: none;
+  }
+  
+  /* Título das colunas da tabela */
+  td > b,
+  td > strong {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #1a2f45;
+    margin-bottom: 12px;
+  }
+  
+  /* =============================================
+     RADIO E CHECKBOX
+  ============================================= */
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+    accent-color: #1a2f45;
+    width: 15px;
+    height: 15px;
+  }
+  
+  /* Labels de radio e checkbox sem uppercase */
+  td label {
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: normal;
+    font-size: 15px;
+    display: inline;
+    margin-bottom: 0;
+  }
+  
+  /* Espaçamento entre as linhas de checkbox/radio */
+  td br + input {
+    margin-top: 8px;
+  }
+  
+  /* =============================================
+     ÁREA DOS BOTÕES
+  ============================================= */
+  .botoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #27ae60;
+    color: #ffffff;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s, transform 0.1s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #1e8449;
+  }
+  
+  input[type="submit"]:active {
+    transform: scale(0.98);
+  }
+  
+  input[type="reset"] {
+    background-color: #ffffff;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+    padding: 12px 35px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.1s;
+  }
+  
+  input[type="reset"]:hover {
+    background-color: #e74c3c;
+    color: #ffffff;
+  }
+  
+  input[type="reset"]:active {
+    transform: scale(0.98);
+  }
