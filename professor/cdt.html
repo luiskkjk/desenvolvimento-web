@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Escola Virtual</title>
-  <link rel="stylesheet" href="cadastro2.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -49,6 +49,17 @@
         </div>
       </div>
 
+      <div class="campo-grupo">
+        <div class="campo">
+          <label for="cpf">CPF</label>
+          <input type="number" id="cpf" name="cpf" placeholder="000.000.000-00">
+        </div>
+        <div class="campo">
+          <label for="cep">CEP</label>
+          <input type="number" id="cep" name="cep" placeholder="00000-000">
+        </div>
+      </div>
+
     </fieldset>
 
     <fieldset>
@@ -56,9 +67,10 @@
 
       <table>
         <tr valign="top">
-          <td>
+        <td>
             <strong>Série</strong>
             <select id="serie" name="serie">
+              <option value="select">Selecione uma série</option>
               <option value="pre-escolar">Pré-escolar</option>
               <option value="1ano">1º ano</option>
               <option value="2ano">2º ano</option>
@@ -66,16 +78,34 @@
               <option value="4ano">4º ano</option>
               <option value="5ano">5º ano</option>
             </select>
-          </td>
 
-          <td>
-            <strong>Turno</strong>
+          <div id="bloco-segunda-lingua">
+            <p>Segunda Língua</p>
+            <div class="opcao-lingua">
+              <input type="radio" id="lingua_ingles" name="segunda-lingua" value="ingles">
+              <span class="flag">US</span>
+              <label for="lingua_ingles">Inglês</label>
+            </div>
+            <div class="opcao-lingua">
+              <input type="radio" id="lingua_espanhol" name="segunda-lingua" value="espanhol">
+              <span class="flag">ES</span>
+              <label for="lingua_espanhol">Espanhol</label>
+            </div>
+          </div>
+
+        </td>
+        <td>
+            <strong>Turno:</strong>
             <input type="radio" name="turno" id="manha" value="manha">
             <label for="manha">Manhã</label><br>
             <input type="radio" name="turno" id="tarde" value="tarde">
             <label for="tarde">Tarde</label>
-          </td>
-
+          
+            <div id="bloco-telefone-tarde">
+              <p>📞 Telefone de Contato para o Turno da Tarde</p>
+              <input type="text" id="telefone-tarde" name="telefone-tarde" placeholder="(61) 9 9999-9999">
+            </div>
+        </td>
           <td>
             <strong>Atividades Extracurriculares</strong>
             <input type="checkbox" name="atividades" id="informatica" value="informatica">
@@ -104,7 +134,7 @@
         <div class="campo-grupo">
             <div class="campo">
                 <label for="logradouro">Logradouro:</label>
-                <input id="logradouro" type="text">
+                <input id="logradouro" type="text" readonly>
             </div>
             <div class="campo">
                 <label for="numero">Número:</label>
@@ -118,21 +148,21 @@
             </div>
             <div class="campo">
                 <label for="bairro">Bairro:</label>
-                <input id="bairro" type="text">
+                <input id="bairro" type="text" readonly>
             </div>
         </div>
         <div class="campo-grupo-tres">
             <div class="campo">
                 <label for="cidade">Cidade:</label>
-                <input id="cidade" type="text">
+                <input id="cidade" type="text" readonly>
             </div>
             <div class="campo">
                 <label for="estado">Estado:</label>
-                <input id="estado" type="text">
+                <input id="estado" type="text" readonly>
             </div>
             <div class="campo">
                 <label for="ibge">Código IBGE:</label>
-                <input id="ibge" type="number">
+                <input id="ibge" type="number" readonly>
             </div>
         </div>     
     </fieldset>
@@ -142,6 +172,8 @@
     </div>
 
   </form>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
