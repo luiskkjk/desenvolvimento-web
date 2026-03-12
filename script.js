@@ -10,3 +10,14 @@ selectSerie.addEventListener('change', function() {
         radiosLingua.forEach(r => r.checked = false);
     }
 });
+
+const verificarTurno = document.getElementsByName('turno');
+const blocoTelefone = document.getElementById('bloco-telefone-tarde');
+
+verificarTurno.forEach(radio => {
+    radio.addEventListener('change', function () {
+    if (this.checked && this.value === 'tarde'){
+        blocoTelefone.style.display = 'block';
+    }else{
+        blocoTelefone.style.display = 'none';
+    }})});
