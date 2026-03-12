@@ -5,6 +5,11 @@ A proposta do projeto é criar uma página de cadastro escolar, utilizando as **
 
 Proposto pelo professor da disciplina de Desenvolvimento Web, o projeto visa alcançar o entendimento completo da criação de uma página web completa, com estilo e interações. 
 
+O intuíto do projeto é:
+
+- Aprimorar as habilidades em JavaScript, HTML e CSS.
+- Assimilar boas práticas de código.
+
 ## Como rodar esse projeto ⌨️
 
 1.  **Clone o repositório:**
