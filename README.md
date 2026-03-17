@@ -10,17 +10,3 @@ O intuíto do projeto é:
 - Aprimorar as habilidades em JavaScript, HTML e CSS.
 - Assimilar boas práticas de código.
 
-## Como rodar esse projeto ⌨️
-
-1.  **Clone o repositório:**
-    ```bash
-    git clone https://github.com](https://github.com/luiskkjk/desenvolvimento-web)
-    ```
-2.  **Entre na pasta:**
-    ```bash
-    cd desenvolvimento-web
-    ```
-3. **Instale a extensão Live Server**
-    
-4.  **Inicie o projeto:**
-   Clicando com botão direito em "index.html" e o iniciando com o Live Server
