@@ -1,0 +1,99 @@
+/* Teste de bootstrap */
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+<body>
+    <div class="container">
+        <div class="card form-card shadow-sm"></div>
+        <div class="card-body">
+            <h2 class="card-title mb-2">Incrição/Contato</h2>
+            <p class="card-text ">Preencha os campos abaixo. Campos marcados com * são obrigatórios.</p>
+
+            <form>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Nome</label>
+                        <input class="form-control" type="text" placeholder="Primeiro nome">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Sobrenome</label>
+                        <input class="form-control" type="text" placeholder="Sobrenome">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Email</label>
+                        <input class="form-control" type="text" placeholder="nome@exemplo.com">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Telefone</label>
+                        <input class="form-control" type="text" placeholder="(DDD) 12345-6789">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label">CPF</label>
+                        <input class="form-control" type="text" placeholder="000.000.000-00">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Data de nascimento</label>
+                        <input class="form-control" type="date">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Senha</label>
+                        <input class="form-control" type="password" placeholder="Mínimo 6 caracteres">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Função</label>
+                        <select class="form-select">
+                            <option selected>Escolha...</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md-12">
+                        <label class="form-label">Usuário</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input class="form-control" type="text" placeholder="nomeusuario" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <label class="form-label">Mensagem</label>
+                        <textarea class="form-control" placeholder="Escreva aqui..."></textarea>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <label class="form-label">Upload de Currículo (PDF)</label>
+                        <input class="form-control mb-2" type="file">
+                        <p class="card-subtitle mb-2 text-body-secondary">Max: 5MB. Apenas PDF</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <label class="card-text">Quero receber novidades</label>
+                        <input class="form-check-input" type="radio" id="contatoporemail">
+                        <label class="form-check-label" for="contatoporemail">Contato por email</label>
+                        <input class="form-check-input" type="radio" id="contatoportel">
+                        <label class="form-check-label" for="contatoportel">Contato por telefone</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-light">Limpar</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</html>
